@@ -1,0 +1,18 @@
+.cart {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+/* .hidden {
+  z-index: -1;
+  visibility: hidden;
+  display: none;
+} */
+
+/* @media (min-width: 768px) {
+  .cart {
+    position: fixed;
+    background-color: white;
+  }
+} */
