@@ -233,7 +233,7 @@ const foodItems = [
       "27",
       "Thức Ăn Nhẹ",
       "Gà Xiên Que (2 Thanh)",
-      "30.000đ",
+      "30.000",
       "VNĐ",
       "https://kfcvietnam.com.vn/uploads/product/4b5e669a366b2048e36dd5b1cc0d652d.jpg"
     ),
@@ -265,7 +265,7 @@ const foodItems = [
       "31",
       "Thức Ăn Nhẹ",
       "Bắp cải trộn (Vừa)",
-      "12.000đ",
+      "12.000",
       "VNĐ",
       "https://kfcvietnam.com.vn/uploads/product/81ecda181b4ef5da7f9ac148f285e759.jpg"
     ),
@@ -655,7 +655,7 @@ const foodItems = [
       "12",
       "Thức Ăn Nhẹ",
       "Bắp cải trộn (Vừa)",
-      "12.000đ",
+      "12.000",
       "VNĐ",
       "https://kfcvietnam.com.vn/uploads/product/81ecda181b4ef5da7f9ac148f285e759.jpg"
     ),
@@ -671,7 +671,7 @@ const foodItems = [
       "14",
       "Thức Ăn Nhẹ",
       "Bắp Cải Trộn (Đại)",
-      "31.000đ",
+      "31.000",
       "VNĐ",
       "https://kfcvietnam.com.vn/uploads/product/3d08287366dad49a0e2ac0d90f9d7ff3.jpg"
     ),
