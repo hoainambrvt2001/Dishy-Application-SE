@@ -34,5 +34,5 @@ The customer can check their cart in the right side of the display screen.
 - Second, to access our website in localhost:
     
   * If you have xampp, copy the source code to the following direction `xampp/htdocs` in your computer then just start the Apache module.
-  * Or you can use `Live server extension` in Visual Studio Code.
+  * Or you can use `Live Server extension` in Visual Studio Code.
     
