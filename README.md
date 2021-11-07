@@ -19,7 +19,7 @@ Our page is also responsive for smaller device such as tablet and mobile. This i
   <img width="40%" src="https://github.com/hoainambrvt2001/DishyApplication/blob/main/assets/4.png">
 </p>
 
-The customer can view the information and add the food to their cart.
+The customer can view the food's information in detail and add this food to their cart.
 <p align="center">
   <img width="80%" src="https://github.com/hoainambrvt2001/DishyApplication/blob/main/assets/3.png">
 </p>
