@@ -313,7 +313,7 @@ const foodItems = [
       "37",
       "Thức Ăn Nhẹ",
       "Cơm Trắng",
-      "10.000đ",
+      "10.000",
       "VNĐ",
       "https://kfcvietnam.com.vn/uploads/product/be88d03a8d38c4d420e08877256ee0be.jpg"
     ),
@@ -321,7 +321,7 @@ const foodItems = [
       "38",
       "Thức Ăn Nhẹ",
       "Súp rong biển (1 phần)",
-      "14.000đ",
+      "14.000",
       "VNĐ",
       "https://kfcvietnam.com.vn/uploads/product/6f0c074738973430bbf70a4f84ed09f7.jpg"
     ),
