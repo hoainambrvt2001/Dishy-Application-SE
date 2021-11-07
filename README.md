@@ -29,7 +29,7 @@ The customer can check their cart in the right side of the display screen.
   <img width="80%" src="https://github.com/hoainambrvt2001/DishyApplication/blob/main/assets/2.png">
 </p>
 
-## **2. How to run our source code?**
+## **2. How to run our code?**
 - First, use `git clone https://github.com/hoainambrvt2001/DishyApplication.git` in your command prompt to download our source.
 - Second, to access our website in localhost:
     
