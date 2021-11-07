@@ -36,10 +36,16 @@
 
 .modal-title {
   display: flex;
-  justify-self: flex-start;
+  justify-content: space-between;
+  align-items: center;
   background-color: lightgray;
   padding: 10px;
   border-radius: 5px;
+}
+
+.modal-title span {
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .modal-content {

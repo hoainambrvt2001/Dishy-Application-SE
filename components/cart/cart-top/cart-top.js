@@ -19,7 +19,7 @@ const additives = function (
     "Đồ chấm: Sốt cay, muối ớt",
     "Đồ nhậu kèm: Tảo xanh",
   ],
-  cost = ["Kr 5.50", "Kr 2.00", "Kr 2.00"]
+  cost = ["VNĐ 5.50", "VNĐ 2.00", "VNĐ 2.00"]
 ) {
   let wrapper = document.createElement("div");
   wrapper.className = "additives-wrapper";

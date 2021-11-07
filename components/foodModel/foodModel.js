@@ -10,9 +10,17 @@ const loadModel = function (item) {
   const modal = document.createElement("div");
   modal.classList = "modal";
 
+  const closeBtn = document.createElement("span");
+  closeBtn.innerHTML = `x`;
+  closeBtn.addEventListener("click", () => {
+    modalContainer.classList.remove("show");
+    modal.remove();
+  });
+
   const title = document.createElement("div");
   title.classList = "modal-title";
   title.innerHTML = `<h1>ADD TO CART</h1>`;
+  title.appendChild(closeBtn);
 
   const content = document.createElement("div");
   content.classList = "modal-content";
@@ -76,7 +84,7 @@ const loadModel = function (item) {
           <i class="fa fa-shopping-cart"></i>
           <p>${item.unitPrice} ${(
       Number(item.price) * Number(quantityNumber.innerText)
-    ).toFixed(2)}</p>
+    ).toFixed(3)}</p>
     `;
   });
   btnMinus.addEventListener("click", () => {
@@ -88,7 +96,7 @@ const loadModel = function (item) {
           <i class="fa fa-shopping-cart"></i>
           <p>${item.unitPrice} ${(
       Number(item.price) * Number(quantityNumber.innerText)
-    ).toFixed(2)}</p>
+    ).toFixed(3)}</p>
     `;
   });
   itemDetail_3.appendChild(btnMinus);
