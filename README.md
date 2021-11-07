@@ -13,8 +13,8 @@ This is user interface of our application:
 <p align="center">
   <img width="80%" src="https://github.com/hoainambrvt2001/DishyApplication/blob/main/assets/1.png">
 </p>
-Our page is also responsive for smaller device such as tablet and mobile. This is illustration image:
 
+Our page is also responsive for smaller device such as tablet and mobile. This is illustration image:
 <p align="center">
   <img width="40%" src="https://github.com/hoainambrvt2001/DishyApplication/blob/main/assets/4.png">
 </p>
