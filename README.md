@@ -33,6 +33,6 @@ The customer can check their cart in the right side of the display screen.
 - First, use `git clone https://github.com/hoainambrvt2001/DishyApplication.git` in your command prompt to download our source.
 - Second, to access our website in localhost:
     ``` 
-  * If you have xampp, copy the source code to the following direction `xampp/htdocs` in your computer then just start the Apache module.</p>
-  * Or you can use `Live server extension` in Visual Studio Code.</p>
+  * If you have xampp, copy the source code to the following direction `xampp/htdocs` in your computer then just start the Apache module.
+  * Or you can use `Live server extension` in Visual Studio Code.
     ```
