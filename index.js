@@ -623,7 +623,7 @@ const foodItems = [
       "8",
       "Thức Ăn Nhẹ",
       "Gà Xiên Que (2 Thanh)",
-      "30.000đ",
+      "30.000",
       "VNĐ",
       "https://kfcvietnam.com.vn/uploads/product/4b5e669a366b2048e36dd5b1cc0d652d.jpg"
     ),
