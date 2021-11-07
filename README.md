@@ -18,6 +18,7 @@ Our page is also responsive for smaller device such as tablet and mobile. This i
 <p align="center">
   <img width="40%" src="https://github.com/hoainambrvt2001/DishyApplication/blob/main/assets/4.png">
 </p>
+
 User can add the food to their cart and it wil automatically update the amount of dish.
 <p align="center">
   <img width="80%" src="https://github.com/hoainambrvt2001/DishyApplication/blob/main/assets/3.png">
