@@ -281,7 +281,7 @@ const foodItems = [
       "33",
       "Thức Ăn Nhẹ",
       "Bắp Cải Trộn (Đại)",
-      "31.000đ",
+      "31.000",
       "VNĐ",
       "https://kfcvietnam.com.vn/uploads/product/3d08287366dad49a0e2ac0d90f9d7ff3.jpg"
     ),
@@ -493,7 +493,7 @@ const foodItems = [
       "2",
       "Cơm - Burger",
       "Cơm Gà Giòn Cay (1 Phần)",
-      40.0,
+      "40.000",
       "VNĐ",
       "https://kfcvietnam.com.vn/uploads/combo/130dba524bed0e612d77979bfd579ed4.jpg"
     ),

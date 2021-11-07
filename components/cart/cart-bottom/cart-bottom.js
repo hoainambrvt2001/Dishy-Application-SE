@@ -46,6 +46,8 @@ const dishQuantity = function (quantity, unitPrice, price) {
     if (!quantity) {
       const temp = traverse(minus, "card-dish");
       dish.removeChild(temp);
+      document.getElementById("amount-dish").innerText =
+        Number(document.getElementById("amount-dish").innerText) - 1;
     } else changeDishPrice(h1, quantity, unitPrice, price);
 
     changeTotalPrice(price, false);

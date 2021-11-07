@@ -58,6 +58,8 @@ const dish = function (item, quantity) {
     </div>
   `;
   cardDish.appendChild(dishWrapper(1, item, quantity));
+  document.getElementById("amount-dish").innerText =
+    Number(document.getElementById("amount-dish").innerText) + 1;
 
   return cardDish;
 };
