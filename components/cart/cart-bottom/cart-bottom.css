@@ -39,6 +39,11 @@
   text-align: right;
 }
 
+.form-data {
+  width: 100%;
+  height: 100%;
+}
+
 .payment {
   background-color: red;
   border-radius: 4px;
@@ -46,7 +51,9 @@
   font-size: 1.75rem;
   font-weight: 600;
   min-height: 48px;
+  width: 100%;
   border: none;
+  cursor: pointer;
 }
 
 /* @media (min-width: 768px) {

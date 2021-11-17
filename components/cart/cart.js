@@ -1,19 +1,21 @@
 // TODO: Wrap all the element of the right hand of the card
 function dishWrapper(index, item, quantity) {
+  console.log(`Index in dish wrapper ${index}`);
   const dishBottomWrapper = document.createElement("div");
   dishBottomWrapper.className = "dish-bottom-wrapper";
   // TODO: Pass argument to additives
   const add = additives();
   dishBottomWrapper.appendChild(add);
   dishBottomWrapper.appendChild(
-    dishBottom(item.unitPrice, Number(item.price), quantity)
+    dishBottom(index, item.unitPrice, Number(item.price), quantity)
   );
 
   const dishTopWrapper = document.createElement("div");
   dishTopWrapper.className = "dish-top-wrapper";
 
   const h2 = document.createElement("h2");
-  h2.innerHTML = `<span style="color:red">${index}.</span>` + item.description;
+  h2.innerHTML =
+    `<span style="color:red">${index + 1}.</span>` + item.description;
 
   const i = document.createElement("i");
   i.className = "fas fa-angle-left card-arrow";
@@ -50,6 +52,8 @@ function dishWrapper(index, item, quantity) {
 }
 
 const dish = function (item, quantity) {
+  addFoodToForm(item, quantity);
+
   const cardDish = document.createElement("div");
   cardDish.className = "card-dish";
   cardDish.innerHTML = `
@@ -57,9 +61,10 @@ const dish = function (item, quantity) {
       <img src=${item.src} alt=${item.description} />
     </div>
   `;
-  cardDish.appendChild(dishWrapper(1, item, quantity));
+  cardDish.appendChild(dishWrapper(count, item, quantity));
   document.getElementById("amount-dish").innerText =
     Number(document.getElementById("amount-dish").innerText) + 1;
 
+  count++;
   return cardDish;
 };

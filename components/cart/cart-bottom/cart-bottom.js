@@ -18,7 +18,7 @@ const dishPrice = function (quantity, unitPrice, price) {
   return div;
 };
 
-const dishQuantity = function (quantity, unitPrice, price) {
+const dishQuantity = function (index, quantity, unitPrice, price) {
   const dish = document.getElementById("dish");
 
   let plus = document.createElement("div");
@@ -38,12 +38,14 @@ const dishQuantity = function (quantity, unitPrice, price) {
 
   plus.addEventListener("click", () => {
     quantity++;
+    updateFoodToForm(index, quantity);
     changeDishPrice(h1, quantity, unitPrice, price);
     changeTotalPrice(price, true);
   });
   minus.addEventListener("click", () => {
     quantity--;
     if (!quantity) {
+      removeFood(index);
       const temp = traverse(minus, "card-dish");
       dish.removeChild(temp);
       document.getElementById("amount-dish").innerText =
@@ -63,10 +65,11 @@ const dishQuantity = function (quantity, unitPrice, price) {
 };
 
 // TODO: Wrap additives, quantity, cash
-function dishBottom(unitPrice, price, quantity) {
+function dishBottom(index, unitPrice, price, quantity) {
+  console.log(index);
   let div = document.createElement("div");
   div.className = "dish-bottom";
-  div.appendChild(dishQuantity(quantity, unitPrice, price));
+  div.appendChild(dishQuantity(index, quantity, unitPrice, price));
   div.appendChild(dishPrice(quantity, unitPrice, price));
 
   changeTotalPrice(quantity * price, true);
