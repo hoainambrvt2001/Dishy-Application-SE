@@ -66,7 +66,7 @@
               </p>
             </div>
           </div>
-          <form action="{{url('payment')}}" class="form-data" method="POST">
+          <form action="{{url('payment', $id)}}" class="form-data" method="POST">
             @csrf
             <input type="hidden" name="total-price" value="0" id="total-price" />
             <button class="payment" type="submit">

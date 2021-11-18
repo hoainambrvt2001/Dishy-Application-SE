@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\OrderDishesController;
+use App\Models\OrderDishes;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,12 +30,21 @@ Route::get('/dishes', function () {
     
 });
 
-Route::post('/payment', function () {
-    return view('menu.submit');
+Route::post('/payment/{id}', function ($id) {
+    return view('menu.submit', ['id' => $id]);
 });
 
  
-
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::resource('order_dishes', OrderDishes::class);
+
+
+Route::post('my_order/store', [OrderDishesController::class, 'store']);
+
+
+Route::get('/orderlist', [OrderDishesController::class, 'show'])->middleware(['auth:sanctum', 'verified']);
+
+Route::get('/processing', [OrderDishesController::class, 'showProcessing'])->middleware(['auth:sanctum', 'verified']);

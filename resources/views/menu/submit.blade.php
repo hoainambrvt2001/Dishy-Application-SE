@@ -40,7 +40,7 @@
 <body>
   <div class="nav-bar">
     <div>
-        <a href="/dishes">
+        <a href="/dishes/{{$id}}">
             <button><i class="fas fa-arrow-left"></i></button>
         </a>
       <span>Back </span>
@@ -53,22 +53,23 @@
       <div class="container">
         <div class="block-heading">
           <h2>Payment</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+          <p>Table: {{$id}}</p>
         </div>
-        <form>
+        <form method="POST" action="{{url('my_order','store')}}">
+          @csrf
           <div class="products">
             <h3 class="title">Checkout</h3>
-            <?php 
-              for ($i = 0; $i < $length; $i++){
-                echo "
-                  <div class='item'>
-                    <span class='price'>VND $price[$i]</span>
-                    <p class='item-name'>$description[$i]</p>
-                    <p class='item-description'>Số lượng: $quantity[$i]</p>
-                  </div>
-                ";
-              }
-            ?>
+            @for ($i = 0; $i < $length; $i++)
+              <div class='item'>
+                <span class='price'>VND {{$price[$i]}}</span>
+                <p class='item-name'>{{$description[$i]}}</p>
+                <p class='item-description'>Số lượng: {{ $quantity[$i]}}</p>
+                <input type="hidden" value="{{ $quantity[$i]}}" name='quantity_{{$i}}'>
+                <input type="hidden" name='name_{{$i}}' value="{{$description[$i]}}">
+              </div>
+            @endfor
+            <input type="hidden" name="length" value="{{$length}}">
+            <input type="hidden" name="tableNumber" value="{{$id}}">
             <!-- <div class="item">
               <span class="price">$200</span>
               <p class="item-name">Product 1</p>
@@ -105,7 +106,7 @@
                 <input id="cvc" type="text" class="form-control" placeholder="CVC" aria-label="Card Holder" aria-describedby="basic-addon1">
               </div>
               <div class="form-group col-sm-12">
-                <button type="button" class="btn btn-primary btn-block">Proceed</button>
+                <button type="submit" class="btn btn-primary btn-block">Proceed</button>
               </div>
             </div>
           </div>
