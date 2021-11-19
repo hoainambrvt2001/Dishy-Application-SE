@@ -15,7 +15,9 @@ function dishWrapper(index, item, quantity) {
 
   const h2 = document.createElement("h2");
   h2.innerHTML =
-    `<span style="color:red">${index + 1}.</span>` + item.description;
+    `<span style="color:red" class="index-dish">${
+      index + 1 - updateIndex(index)
+    }</span><span style="color:red">.</span>` + item.description;
 
   const i = document.createElement("i");
   i.className = "fas fa-angle-left card-arrow";
