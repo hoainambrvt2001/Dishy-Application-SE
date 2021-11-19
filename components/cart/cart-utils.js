@@ -52,8 +52,6 @@ function changeDishPrice(h1, quantity, unitPrice, price) {
 // Update index
 let removeQueue = [];
 let temp = 0;
-let i = 0;
-let holdValue = 0;
 
 const updateIndex = (index) => {
   temp = 0;
