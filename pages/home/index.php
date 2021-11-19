@@ -10,7 +10,11 @@
 <body>
     <div class = "banner">
         <div class = "navbar">
-            <img src="./pages/home/Dishy.png" class = "logo">
+            <div class="menu">
+                <img src="./pages/home/Dishy.png" class = "logo">
+                <img  src="./pages/home/menu-icon.svg" class = "icon">
+                <img src="./pages/home/cross.svg" class="icon">
+            </div>
             <ul>
                 <li><a href="./?page=home">Home</a></li>
                 <li><a href="./?page=menu">Menu</a></li>
@@ -27,8 +31,11 @@
                 <button type = "button"><div></div>SUBCRIBE</button>
             </div>
         </div>
+        
 
 
     </div>
+
+    <script src="./pages/home/home.js"></script>
 </body>
 </html>
