@@ -45,7 +45,6 @@
         </a>
       <span>Back </span>
     </div>
-    <p class="nav-title">PAYMENT</p>
     <p class="nav-path">Home <span>&#8226 Payment</span></p>
   </div>
   <main class="page payment-page">

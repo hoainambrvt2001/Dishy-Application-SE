@@ -4,7 +4,8 @@ let icon = div.getElementsByClassName("icon");
 let ul = document.querySelector("ul");
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 425) {
+  document.body.style.overflow = "auto";
+  if (window.innerWidth > 426) {
     icon[0].style.display = "none";
     icon[1].style.display = "none";
     ul.style.zIndex = 0;
@@ -12,6 +13,7 @@ window.addEventListener("resize", () => {
     ul.style.height = "";
   } else {
     icon[0].style.display = "block";
+    icon[1].style.display = "none";
     ul.style.zIndex = -1;
     ul.style.opacity = 0;
     ul.style.height = 0;
@@ -26,7 +28,8 @@ icon[0].addEventListener("click", () => {
   // set style
   ul.style.zIndex = 10;
   ul.style.opacity = 1;
-  ul.style.height = "calc(100vh - 100%)";
+  ul.style.height = "100vh";
+  document.body.style.overflow = "hidden";
 });
 
 icon[1].addEventListener("click", () => {
@@ -38,4 +41,5 @@ icon[1].addEventListener("click", () => {
   ul.style.zIndex = -1;
   ul.style.opacity = 0;
   ul.style.height = "0";
+  document.body.style.overflow = "auto";
 });

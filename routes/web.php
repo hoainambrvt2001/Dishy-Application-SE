@@ -35,9 +35,7 @@ Route::post('/payment/{id}', function ($id) {
 });
 
  
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [OrderDishesController::class, 'show'])->name('dashboard');
 
 Route::resource('order_dishes', OrderDishes::class);
 

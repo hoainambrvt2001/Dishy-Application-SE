@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./pages/home/style.css">
 </head>
 <body>
+    <div class="background-img">
+        <img src="./pages/home/Background.jpg" >
+        <div class="visual-layer"></div>
+    </div>
     <div class = "banner">
         {{-- <div class = "navbar">
             <img src="./pages/home/Dishy.png" class = "logo">
@@ -19,6 +23,7 @@
             </ul>
 
         </div> --}}
+        
         <div class = "navbar">
             <div class="menu">
                 <img src="{{asset('/pages/home/Dishy.png')}}" class = "logo">
@@ -29,7 +34,6 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/dishes/0">Menu</a></li>
                 <li><a href="{{ route('login') }}">Login</a></li>
-                <li><a href="#">About Us</a></li>
             </ul>
         </div>
         <div class = "content">
