@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./pages/home/style.css">
 </head>
 <body>
+    <div class="background-img">
+        <img src="./pages/home/Background.jpg" >
+        <div class="visual-layer"></div>
+    </div>
     <div class = "banner">
         <div class = "navbar">
             <div class="menu">
