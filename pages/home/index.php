@@ -28,8 +28,8 @@
 
         </div>
         <div class = "content">
-            <h1>Enjoy your food at Dishy</h1>
-            <p>Foody is one of the best, most creative and modern free HTML5 restaurant website template designs. Keep in mind, it is a versatile and flexible solution that you can utilize for an assortment of different food businesses, too.</p>
+            <h1>Savor a flavor at Dishy</h1>
+            <p>A brand-new Fast-food restaurant in BKU. Whether you’re in the mood for something spicy or sweet, we’ve got a huge range of authentic cuisine available on our menu—all deep fried to perfection. We’re excited to bring something new to our community and can’t wait to share our unique recipes.</p>
             <div class="homepagebutton">
                 <button type = "button"><div></div> WATCH MORE</button>
                 <button type = "button"><div></div>SUBCRIBE</button>
