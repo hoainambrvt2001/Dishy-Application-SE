@@ -4,7 +4,7 @@ let icon = div.getElementsByClassName("icon");
 let ul = document.querySelector("ul");
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 425) {
+  if (window.innerWidth > 426) {
     icon[0].style.display = "none";
     icon[1].style.display = "none";
     ul.style.zIndex = 0;
@@ -12,6 +12,7 @@ window.addEventListener("resize", () => {
     ul.style.height = "";
   } else {
     icon[0].style.display = "block";
+    icon[1].style.display = "none";
     ul.style.zIndex = -1;
     ul.style.opacity = 0;
     ul.style.height = 0;

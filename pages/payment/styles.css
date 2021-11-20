@@ -14,24 +14,20 @@
 }
 
 .nav-bar button {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: white;
   background-color: #051536;
-  padding: 5px 20px;
+  padding: 3px 10px;
   border-radius: 10px;
   margin: 15px;
   cursor: pointer;
 }
 
 .nav-bar span {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1;
   color: #051536;
   font-weight: bold;
-}
-
-.nav-title {
-  display: none;
 }
 
 .nav-path {
@@ -163,28 +159,20 @@
 }
 
 @media (min-width: 576px) {
-  .nav-path,
-  .nav-title {
+  .nav-path {
     display: block;
     margin-bottom: 0;
   }
 
-  .nav-title {
-    font-size: 2.5rem;
-    color: #051536;
-    font-weight: bold;
-    line-height: 1;
-  }
-
   .nav-path {
-    padding-top: 1rem;
-    font-size: 1.5rem;
+    padding-top: 0.25rem;
+    font-size: 1.25rem;
     color: rgba(156, 163, 175, 1);
     line-height: 1;
   }
 
   .nav-path span {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .payment-form .title {

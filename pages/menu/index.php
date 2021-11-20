@@ -17,10 +17,12 @@
 <body>
   <div class="body-container">
     <div class="body-container-item">
-      <div class="nav-bar">
-        <button><i class="fa fa-home"></i></button>
-        <span>Back to home</span>
-      </div>
+      <a href="./?page=home" style="text-decoration: none;">
+        <div class="nav-bar">
+          <button><i class="fa fa-home"></i></button>
+          <span>Back to home</span>
+        </div>
+      </a>
       <div class="owl-slider">
         <div class="owl-carousel owl-theme"></div>
       </div>

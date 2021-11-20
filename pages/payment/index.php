@@ -29,11 +29,12 @@
 
 <body>
   <div class="nav-bar">
-    <div>
-      <button><i class="fas fa-arrow-left"></i></button>
-      <span>Back </span>
-    </div>
-    <p class="nav-title">PAYMENT</p>
+    <a href="./?page=menu" style="text-decoration: none;">
+      <div>
+          <button><i class="fas fa-arrow-left"></i></button>
+        <span>Back </span>
+      </div>
+    </a>
     <p class="nav-path">Home <span>&#8226 Payment</span></p>
   </div>
   <main class="page payment-page">
