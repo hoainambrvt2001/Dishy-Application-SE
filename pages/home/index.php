@@ -23,7 +23,6 @@
                 <li><a href="./?page=home">Home</a></li>
                 <li><a href="./?page=menu">Menu</a></li>
                 <li><a href="#">Login</a></li>
-                <li><a href="#">About Us</a></li>
             </ul>
 
         </div>
