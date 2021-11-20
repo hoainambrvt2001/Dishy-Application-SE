@@ -17,7 +17,7 @@
   font-size: 1.5rem;
   color: white;
   background-color: #051536;
-  padding: 3px 10px;
+  padding: 3px 10px !important;
   border-radius: 10px;
   margin: 15px;
   cursor: pointer;
