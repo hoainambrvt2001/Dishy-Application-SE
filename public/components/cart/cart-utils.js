@@ -23,7 +23,7 @@ function changeTotalPrice(price, plus) {
       price * 100
     ).toFixed(0);
   } else {
-    console.log(Number(totalPrice[0].innerHTML) - price * 1.1);
+    // console.log(Number(totalPrice[0].innerHTML) - price * 1.1);
     totalPrice[0].innerHTML = Math.abs(
       (Number(totalPrice[0].innerHTML) - price * 1100).toFixed(0)
     );
@@ -49,6 +49,27 @@ function changeDishPrice(h1, quantity, unitPrice, price) {
   ).toFixed(3)})`;
 }
 
+// Update index
+let removeQueue = [];
+let temp = 0;
+
+const updateIndex = (index) => {
+  temp = 0;
+  removeQueue.forEach((idx) => {
+    if (idx < index) temp++;
+  });
+
+  return temp;
+};
+
+const updateAllIndex = (removeIdx) => {
+  let dishes = document.getElementsByClassName("card-dish");
+  while (removeIdx < dishes.length) {
+    dishes[removeIdx].querySelector(".index-dish").innerText = removeIdx + 1;
+    removeIdx++;
+  }
+};
+
 // New Section for form
 let count = 0;
 let form = document.querySelector(".form-data");
@@ -62,17 +83,20 @@ const addFoodToForm = ({ description, price }, quantity) => {
   `;
 
   form.appendChild(div);
-  console.log(form);
+  // console.log(form);
 };
 
 const updateFoodToForm = (index, quantity) => {
   // change input quantity value
   form
     .getElementsByTagName("div")
-    [index].getElementsByTagName("input")[2].value = quantity;
+    [index - updateIndex(index)].getElementsByTagName("input")[2].value =
+    quantity;
 };
 
 const removeFood = (index) => {
-  form.removeChild(form.getElementsByTagName("div")[index]);
-  console.log(form);
+  form.removeChild(
+    form.getElementsByTagName("div")[index - updateIndex(index)]
+  );
+  // console.log(form);
 };

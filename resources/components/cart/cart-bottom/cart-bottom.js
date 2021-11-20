@@ -45,9 +45,12 @@ const dishQuantity = function (index, quantity, unitPrice, price) {
   minus.addEventListener("click", () => {
     quantity--;
     if (!quantity) {
+      removeQueue.push(index);
       removeFood(index);
       const temp = traverse(minus, "card-dish");
       dish.removeChild(temp);
+
+      updateAllIndex(index - updateIndex(index));
       document.getElementById("amount-dish").innerText =
         Number(document.getElementById("amount-dish").innerText) - 1;
     } else changeDishPrice(h1, quantity, unitPrice, price);

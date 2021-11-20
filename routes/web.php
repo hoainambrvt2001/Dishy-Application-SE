@@ -45,6 +45,6 @@ Route::resource('order_dishes', OrderDishes::class);
 Route::post('my_order/store', [OrderDishesController::class, 'store']);
 
 
-Route::get('/orderlist', [OrderDishesController::class, 'show'])->middleware(['auth:sanctum', 'verified']);
+Route::get('/orderlist', [OrderDishesController::class, 'show'])->middleware(['auth:sanctum', 'verified'])->name('orderlist');
 
 Route::get('/processing', [OrderDishesController::class, 'showProcessing'])->middleware(['auth:sanctum', 'verified']);

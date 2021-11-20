@@ -21,12 +21,12 @@
         </div> --}}
         <div class = "navbar">
             <div class="menu">
-                <img src="{{asset('/pages/home/Dishy.png')}}" class = "logo">
-                <img src="{{asset('/pages/home/menu-icon.svg')}}" class = "icon">
-                <img src="{{asset('/pages/home/cross.svg')}}" class="icon">
+                <img src="https://github.com/hoainambrvt2001/DishyApplication/blob/new-ui/pages/home/Dishy.png" class = "logo">
+                <img src="https://github.com/hoainambrvt2001/DishyApplication/blob/new-ui/pages/home/menu-icon.svg" class = "icon">
+                <img src="https://github.com/hoainambrvt2001/DishyApplication/blob/new-ui/pages/home/cross.svg" class="icon">
             </div>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="/">>Home</a></li>
                 <li><a href="/dishes/0">Menu</a></li>
                 <li><a href="{{ route('login') }}">Login</a></li>
                 <li><a href="#">About Us</a></li>
